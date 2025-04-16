@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snehal Avhad - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 15px 25px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 15px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            font-size: 14px;
+            border-top: 2px solid #ddd;
+            padding-top: 10px;
+        }
+
+        #header {
+            background: linear-gradient(to right, #2980b9, #6dd5fa);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        #header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        #header p {
+            font-size: 1.5rem;
+        }
+
+        .button {
+            padding: 15px 30px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about-container img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            margin-right: 20px;
+            border: 4px solid #ddd;
+        }
+
+        .about-container div {
+            max-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-container img {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Snehal Avhad</h1>
+        <p>Cloud Infrastructure | IoT | Computer Networking | Internet Protocol</p>
+        <a href="#contact" class="button">Contact Me</a>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="snehal.jpg" alt="Snehal Avhad Photo">
+            <div>
+                <p>I am a passionate technologist with expertise in AWS, IoT, Computer Networking, and Internet Protocol. I enjoy solving real-world problems with smart solutions and constantly seek to learn and grow.</p>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>IoT</li>
+                    <li>Computer Networking</li>
+                    <li>AWS</li>
+                    <li>DevOps</li>
+                </ul>
+                <h3>Interests</h3>
+                <ul>
+                    <li>Sports</li>
+                    <li>Dancing</li>
+                    <li>Trekking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="solar_tracker.jpg" alt="Solar Tracker">
+                <h3>Solar Tracker</h3>
+                <p>Developed a solar tracking system using IoT to optimize solar panel efficiency.</p>
+            </div>
+            <div class="project">
+                <img src="driver_drowsiness.jpg" alt="Drowsiness Detection">
+                <h3>Driver Drowsiness Detection</h3>
+                <p>A system designed to monitor drivers and detect signs of drowsiness to enhance road safety.</p>
+            </div>
+            <div class="project">
+                <img src="kubernetes_aws.jpg" alt="Kubernetes on AWS">
+                <h3>Kubernetes on AWS</h3>
+                <p>Set up and managed a Kubernetes cluster on AWS for efficient container deployment.</p>
+            </div>
+            <div class="project">
+                <img src="docker_deployment.jpg" alt="Docker Deployment">
+                <h3>Docker Deployment</h3>
+                <p>Deployed Docker containers on AWS EC2 instances for streamlined app management.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships">
+        <h2>Internships</h2>
+        <p>I have gained hands-on experience at these organizations:</p>
+        <ul>
+            <li><strong>Satmat Technologies</strong> – Focused on IoT and Cloud solutions.</li>
+            <li><strong>SP Software Technologies Pvt Ltd</strong> – Worked on networking and AWS projects.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, fill out the form below:</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <h3>Find Me Online</h3>
+        <p>Email: <a href="mailto:snehalvavhad2002@gmail.com">snehalvavhad2002@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/snehal-avhad-0bb1552b6/" target="_blank">linkedin.com/in/snehal-avhad</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Snehal Avhad | All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
